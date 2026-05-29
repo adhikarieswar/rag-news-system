@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main, master ]
   workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   test-and-deploy:
